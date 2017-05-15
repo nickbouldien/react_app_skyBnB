@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Grid, Navbar, Jumbotron, Button } from 'react-bootstrap';
+import { Grid, Navbar, Jumbotron, Button, Row, Col, FormGroup, ControlLabel, FormControl, HelpBlock} from 'react-bootstrap';
 
 class App extends Component {
   render() {
@@ -35,6 +35,34 @@ class App extends Component {
         <p className="App-intro">
           <Button href="http://react-bootstrap.github.io/components.html">Bootstrap Docs</Button>
         </p>
+
+        <div>
+        <form inline>
+          <FormGroup controlId="formBasicText">
+            <ControlLabel>form that goes nowhere</ControlLabel>
+            <FormControl type="text" placeholder="Enter text"/>
+            <FormControl.Feedback />
+            <ControlLabel >Email</ControlLabel>
+            <FormControl type="email" placeholder="blank@example.com" />
+
+        </FormGroup>
+        <Button type="submit">Submit</Button>
+      </form>
+      </div>
+
+
+        <Grid>
+          <Row className="show-grid">
+            <Col xs={12} md={8}><code>Grid 8</code></Col>
+            <Col xs={6} md={4}><code>Grid 4 </code></Col>
+          </Row>
+
+          <Row className="show-grid">
+            <Col xs={6} md={4}><code>&lt;{'Col xs={6} md={4}'} /&gt;</code></Col>
+            <Col xs={6} md={4}><code>&lt;{'Col xs={6} md={4}'} /&gt;</code></Col>
+            <Col xsHidden md={4}><code>&lt;{'Col xsHidden md={4}'} /&gt;</code></Col>
+          </Row>
+        </Grid>
 
 
       <div>
