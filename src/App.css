@@ -18,6 +18,11 @@
   font-size: large;
 }
 
+img {
+  height: 100px;
+  width: auto;
+}
+
 h2 {
   color: yellow;
 }

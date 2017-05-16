@@ -14,13 +14,17 @@ class RecipeIndex extends Component {
         <li key={recipe.id}>
           <Link to={`/recipes/${recipe.id}`} >
             {recipe.name}
+            <br />
           </Link>
+          <img src={recipe.image} />
         </li>
       )
     return (
+      
       <ul>
         { list }
       </ul>
+
     );
   }
 }

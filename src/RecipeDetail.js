@@ -24,6 +24,10 @@ class RecipeDetail extends Component {
       <div>
         <Link to='/'>Home</Link>
         <h2>{this.state.recipe.name}</h2>
+        <img src={this.state.recipe.image} />
+        <p>{this.state.recipe.address}</p>
+        <p>{this.state.recipe.city}, {this.state.recipe.state}</p>
+        <p>{this.state.recipe.description}</p>
       </div>
     )
   }
