@@ -21,20 +21,6 @@ class App extends Component {
           <div>
             <Route exact path="/" component={RecipeIndex} />
             <Route path="/recipes/:id" component={RecipeDetail} />
-
-          </div>
-
-          <div>
-            <Head  />
-          </div>
-
-          <div>
-            <Places />
-          </div>
-
-
-          <div>
-            <Content />
           </div>
 
         </div>

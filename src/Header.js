@@ -10,7 +10,7 @@ class Header extends Component {
         <Grid>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">React App</a>
+              <a href="/">skyBnB</a>
             </Navbar.Brand>
           </Navbar.Header>
           <Navbar.Collapse>
@@ -25,10 +25,8 @@ class Header extends Component {
       </Navbar>
       <Jumbotron>
         <Grid>
-          <h2>Welcome to React</h2>
-          <h4 name="nick">Hello</h4>
+          <h2>skyBnB</h2>
           <img src={logo} className="App-logo" alt="logo" />
-          <h4>by nick</h4>
         </Grid>
       </Jumbotron>
     </div>
