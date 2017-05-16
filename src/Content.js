@@ -26,7 +26,7 @@ class Content extends Component {
 
     <Grid>
       <Row className="show-grid">
-        <Col xs={12} md={8}><code>Grid 8</code></Col>
+        <Col xs={12} md={8}>Nick</Col>
         <Col xs={6} md={4}><code>Grid 4 </code></Col>
       </Row>
 
