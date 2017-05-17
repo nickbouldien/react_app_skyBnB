@@ -11,19 +11,31 @@ class RecipeIndex extends Component {
     }
     render(){
       let list = this.state.recipes.map(recipe =>
-        <li key={recipe.id}>
+        // <li key={recipe.id}>
+        //   <Link to={`/recipes/${recipe.id}`} >
+        //     {recipe.name}
+        //     <br />
+        //   </Link>
+        //   <img src={recipe.image} />
+        // </li>
+        <div className="col" key={recipe.id}>
           <Link to={`/recipes/${recipe.id}`} >
             {recipe.name}
             <br />
           </Link>
           <img src={recipe.image} />
-        </li>
+        </div>
       )
     return (
-      
-      <ul>
-        { list }
-      </ul>
+
+      // <ul>
+      //   { list }
+      // </ul>
+
+      <div className="flex-grid">
+        {list}
+      </div>
+
 
     );
   }

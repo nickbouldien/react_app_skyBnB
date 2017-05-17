@@ -18,6 +18,17 @@
   font-size: large;
 }
 
+.flex-grid {
+  display:flex;
+  justify-content: space-between;
+}
+
+.flex-grid .col {
+  flex:3 100%;
+  /*width: 3;*/
+}
+
+
 img {
   height: 100px;
   width: auto;

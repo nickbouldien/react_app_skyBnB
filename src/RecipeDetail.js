@@ -11,7 +11,9 @@ class RecipeDetail extends Component {
   }
 
   componentWillMount(){
+    debugger;
     const id= this.props.match.params.id //damn
+
     this.setState({recipeId: id})
     let recipe = this.state.recipes.find(listing => listing.id===parseInt(id))
     if(recipe){

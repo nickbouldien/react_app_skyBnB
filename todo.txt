@@ -1,0 +1,6 @@
+
+
+// put the list items in a grid to display
+
+// add more locations
+// change the names from recipes to locations/etc
