@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
 import Header from './Header';
-import Content from './Content';
-import Head from './Head';
-import Places from './Places';
-import RecipeIndex from './RecipeIndex';
-import RecipeDetail from './RecipeDetail';
+// import Content from './Content';
+// import Head from './Head';
+// import Places from './Places';
+import ListingIndex from './routes/ListingIndex';
+import ListingDetail from './routes/ListingDetail';
 
 class App extends Component {
   render() {
