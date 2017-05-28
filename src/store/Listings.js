@@ -66,20 +66,33 @@ class Listings extends EventEmitter {
     return this.locations;
   }
 
-  addLocation(){
+  addLocation(action){
     this.locations.push({
       id: new Date().valueOf(),
-      name: name
+      name: action.name,
+      address: action.address,
+      city: action.city,
+      state: action.state,
+      image: action.image,
+      description: action.description
     })
     this.emit('change')
   }
 
-  handleAction(){
-
+  handleActions(action){
+    console.log('action received', action);
+    switch(action.type){
+      case("CREATE_LOCATION"):{
+        this.addLocation(action)
+        break;
+      }
+      default: {}
+    }
   }
-
 }
 
 const listings = new Listings();
+dispatcher.register(listings.handleActions.bind(listings))
+window.dispatcher = dispatcher;
 window.listings = listings;
 export default listings;
