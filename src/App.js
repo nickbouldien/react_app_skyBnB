@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
-import Header from './Header';
-// import Content from './Content';
-// import Head from './Head';
-// import Places from './Places';
+import Header from './components/Header';
 import ListingIndex from './routes/ListingIndex';
 import ListingDetail from './routes/ListingDetail';
 
@@ -19,8 +16,8 @@ class App extends Component {
           </div>
 
           <div>
-            <Route exact path="/" component={RecipeIndex} />
-            <Route path="/recipes/:id" component={RecipeDetail} />
+            <Route exact path="/" component={ListingIndex} />
+            <Route path="/recipes/:id" component={ListingDetail} />
           </div>
 
         </div>

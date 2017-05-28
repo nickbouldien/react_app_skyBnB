@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Navbar, Jumbotron, Button, Row, Col, FormGroup, ControlLabel, FormControl, HelpBlock} from 'react-bootstrap';
+import { Grid, Navbar, Jumbotron } from 'react-bootstrap';
+// Button, Row, Col, FormGroup, ControlLabel, FormControl, HelpBlock
 import logo from './logo.svg';
 
 class Header extends Component {
