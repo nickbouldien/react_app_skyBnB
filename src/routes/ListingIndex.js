@@ -1,7 +1,7 @@
 // Menu.js (recipe/restaurant)
 
 import React, { Component } from 'react';
-// import { Grid, Navbar, Jumbotron, Button, Row, Col, FormGroup, ControlLabel, FormControl, HelpBlock} from 'react-bootstrap';
+import { Grid, Navbar, Jumbotron, Button, Row, Col, FormGroup, ControlLabel, FormControl, HelpBlock} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import listings from '../store/Listings';
 import {createLocation} from '../actions/ListingActions';
@@ -37,26 +37,29 @@ class ListingIndex extends Component {
     // }
     render(){
       let list = this.state.listings.map(listing =>
-        <div className="col" key={listing.id}>
-          <Link to={`/listings/${listing.id}`} >
-            {listing.name}
-            {/* {listing.city} */}
-            <br />
-          </Link>
-          <img src={listing.image} alt={listing.name}/>
-        </div>
+        // <div className="row">
+          <div className="col-xs-3" key={listing.id}>
+            <Link to={`/listings/${listing.id}`} >
+              {listing.name}
+              <br />
+            </Link>
+            <img src={listing.image} alt={listing.name}/>
+            {/* </div> */}
+          </div>
       )
     return (
-      <div>
+      <div className="container">
+        <Link to='/add'>Add a listing</Link>
         <h3>Locations</h3>
 
-        <div className="flex-grid">
-          {list}
+        <div className="row">
+          <div >
+            {list}
+          </div>
         </div>
         <br />
-        <Link to='/add'>Add listing page</Link>
-      </div>
 
+      </div>
     );
   }
 }
