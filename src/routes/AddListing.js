@@ -16,9 +16,9 @@ class AddListing extends Component {
       // listings: listings.getAllLocations(),
       newListingData: {
         name: '',
+        address: '',
         city: '',
         state: '',
-        address: '',
         description: '',
         image: ''
       }
@@ -30,6 +30,7 @@ class AddListing extends Component {
   newListingUpdate(newListingData){
     this.setState({newListingData: newListingData}, ()=>{
       console.log('state after ' , this.state);
+      createLocation(this.state)
     })
     // call function in action? createLocation??
   }

@@ -32,9 +32,9 @@ class ListingIndex extends Component {
       })
     }
 
-    handleSubmit(args){
-      console.log(args);
-    }
+    // handleSubmit(args){
+    //   console.log(args);
+    // }
     render(){
       let list = this.state.listings.map(listing =>
         <div className="col" key={listing.id}>

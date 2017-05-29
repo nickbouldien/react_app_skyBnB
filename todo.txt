@@ -10,7 +10,7 @@ done -- change the names from recipes to locations/etc
 // make full stack - use express/sequelize/postgres on backend
 // add login function (1 for people listing, another for those looking for listings)
 // add a reservation feature to let consumers reserve a listing for a given period of time
-//
+// delete listing (or have expiration??)
 
 
 

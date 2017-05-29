@@ -83,7 +83,7 @@ class Listings extends EventEmitter {
     console.log('action received', action);
     switch(action.type){
       case("CREATE_LOCATION"):{
-        this.addLocation(action)
+        this.addLocation(action.listing.newListingData)
         break;
       }
       default: {}

@@ -14,12 +14,6 @@ class AddListingForm extends Component {
     event.preventDefault();
     console.log('handle submit in the form');
   }
-  // handleNewLocationNameChange(){
-  //   console.log('handling name change');
-  // }
-  // handleAddLocation(){
-  //   console.log('hanlding add location');
-  // }
   handleChange(event){
     let target = event.target;
     let attribute = target.name;
@@ -45,6 +39,18 @@ class AddListingForm extends Component {
               type='text'
               placeholder="Hawaii Beach House"
               value={this.state.name}
+              onChange={this.handleChange.bind(this)}
+            />
+            <br />
+            <label
+              htmlFor={this.props.city}>
+              Address
+            </label>
+            <input
+              name='address'
+              type='text'
+              placeholder="221B Baker Street"
+              value={this.state.address}
               onChange={this.handleChange.bind(this)}
             />
             <br />
@@ -107,3 +113,10 @@ class AddListingForm extends Component {
   }
 
 export default AddListingForm;
+
+// handleNewLocationNameChange(){
+//   console.log('handling name change');
+// }
+// handleAddLocation(){
+//   console.log('hanlding add location');
+// }
