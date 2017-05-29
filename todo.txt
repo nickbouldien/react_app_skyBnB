@@ -5,12 +5,17 @@
 done -- add more locations
 done -- change the names from recipes to locations/etc
 
-
-
+// add a success message when a listing is made
+// redirect to the index of all listings
 // make full stack - use express/sequelize/postgres on backend
 // add login function (1 for people listing, another for those looking for listings)
 // add a reservation feature to let consumers reserve a listing for a given period of time
 // delete listing (or have expiration??)
+
+
+-- warning.js:36 Warning: setState(...): Can only update a mounted or mounting component. This usually means you called setState() on an unmounted component. This is a no-op. Please check the code for the ListingIndex component.
+
+
 
 
 

@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import { Grid, Navbar, Jumbotron, Button, Row, Col, FormGroup, ControlLabel, FormControl, HelpBlock} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 import listings from '../store/Listings';
 import {createLocation} from '../actions/ListingActions';
 
@@ -22,7 +23,7 @@ class ListingIndex extends Component {
     }
 
     handleAddLocation(){
-      console.log('handling');
+      console.log('handling add location');
       createLocation(this.state.newLocationName)
     }
 
@@ -57,8 +58,11 @@ class ListingIndex extends Component {
             {list}
           </div>
         </div>
+
         <br />
 
+
+        <Footer />
       </div>
     );
   }
