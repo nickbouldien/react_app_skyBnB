@@ -15,9 +15,9 @@ class ListingDetail extends Component {
   componentWillMount(){
     // debugger;
     console.log('mounting details');
-    console.log(this.state.listings);
+    //console.log(this.state.listings);
     const id = this.props.match.params.id //damn
-    console.log(id);
+    //console.log(id);
 
     this.setState({ listingId: id })
     let listing = this.state.listings.find(listing => listing.id === parseInt(id, 10))
@@ -28,8 +28,8 @@ class ListingDetail extends Component {
 
   render() {
     // debugger;
-    console.log(this.state.listings);
-    console.log(this.state);
+    //console.log(this.state.listings);
+    //console.log(this.state);
     return (
       <div>
         <Link to='/'>Home</Link>
