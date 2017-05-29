@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
-// import listings from '../store/Listings';
+ import listings from '../store/Listings';
 import { Link } from 'react-router-dom';
 
-class listingDetail extends Component {
-  // constructor(props){
-  //   super(props)
-  //   this.state = {
-  //     listings: listings.getAllLocations()
-  //   }
-  // }
+class ListingDetail extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      listings: listings.getAllLocations() //,
+      // listingId: id,
+      // listing: listing
+    }
+  }
 
   componentWillMount(){
-    //debugger;
+    // debugger;
+    console.log('mounting details');
+    console.log(this.state.listings);
     const id = this.props.match.params.id //damn
+    console.log(id);
 
     this.setState({ listingId: id })
     let listing = this.state.listings.find(listing => listing.id === parseInt(id, 10))
@@ -22,6 +27,9 @@ class listingDetail extends Component {
   }
 
   render() {
+    // debugger;
+    console.log(this.state.listings);
+    console.log(this.state);
     return (
       <div>
         <Link to='/'>Home</Link>
@@ -34,5 +42,6 @@ class listingDetail extends Component {
     )
   }
 }
-
-export default listingDetail;
+window.state = ListingDetail
+// window.ListingDetail = ListingDetail
+export default ListingDetail;

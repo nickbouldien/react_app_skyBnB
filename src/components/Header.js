@@ -16,10 +16,13 @@ class Header extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Navbar.Text>
-              <Navbar.Link href="#">Home</Navbar.Link>
+              <Navbar.Link href="/">Home</Navbar.Link>
             </Navbar.Text>
             <Navbar.Text>
               <Navbar.Link href="#about">About</Navbar.Link>
+            </Navbar.Text>
+            <Navbar.Text>
+              <Navbar.Link href="/add">Add Listing</Navbar.Link>
             </Navbar.Text>
           </Navbar.Collapse>
         </Grid>

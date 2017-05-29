@@ -37,13 +37,6 @@ class ListingIndex extends Component {
     }
     render(){
       let list = this.state.listings.map(listing =>
-        // <li key={listing.id}>
-        //   <Link to={`/listings/${listing.id}`} >
-        //     {listing.name}
-        //     <br />
-        //   </Link>
-        //   <img src={listing.image} />
-        // </li>
         <div className="col" key={listing.id}>
           <Link to={`/listings/${listing.id}`} >
             {listing.name}
@@ -60,8 +53,8 @@ class ListingIndex extends Component {
         <div className="flex-grid">
           {list}
         </div>
-
-        <Link to='/add'>Add listing page</Link>  
+        <br />
+        <Link to='/add'>Add listing page</Link>
       </div>
 
     );
@@ -69,3 +62,12 @@ class ListingIndex extends Component {
 }
 
 export default ListingIndex;
+
+
+// <li key={listing.id}>
+//   <Link to={`/listings/${listing.id}`} >
+//     {listing.name}
+//     <br />
+//   </Link>
+//   <img src={listing.image} />
+// </li>
