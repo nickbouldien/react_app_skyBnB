@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import ListingIndex from './routes/ListingIndex';
 import ListingDetail from './routes/ListingDetail';
-import AddListing from './routes/ListingDetail';
+import AddListing from './routes/AddListing';
 
 
 class App extends Component {
