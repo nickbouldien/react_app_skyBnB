@@ -31,6 +31,10 @@ class ListingIndex extends Component {
         newLocationName: e.target.value
       })
     }
+
+    handleSubmit(args){
+      console.log(args);
+    }
     render(){
       let list = this.state.listings.map(listing =>
         // <li key={listing.id}>
@@ -52,17 +56,13 @@ class ListingIndex extends Component {
     return (
       <div>
         <h3>Locations</h3>
-        <h5>Add a location</h5>
-        <label>Name</label>
-        <input value={this.state.newLocationName} onChange={this.handleNewLocationNameChange.bind(this)}></input>
 
-        <button onClick={this.handleAddLocation.bind(this)}>Add Location</button>
         <div className="flex-grid">
           {list}
         </div>
 
+        <Link to='/add'>Add listing page</Link>  
       </div>
-
 
     );
   }

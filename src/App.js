@@ -4,6 +4,8 @@ import './App.css';
 import Header from './components/Header';
 import ListingIndex from './routes/ListingIndex';
 import ListingDetail from './routes/ListingDetail';
+import AddListing from './routes/ListingDetail';
+
 
 class App extends Component {
   render() {
@@ -18,6 +20,8 @@ class App extends Component {
           <div>
             <Route exact path="/" component={ListingIndex} />
             <Route path="/recipes/:id" component={ListingDetail} />
+            <Route path="/add" component={AddListing} />
+
           </div>
 
         </div>
